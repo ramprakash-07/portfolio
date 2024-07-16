@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+:root{
+    --bgcolor:black;
+    --textcolor:white;
+    --header:rgb(188, 60, 60);
+}
+body{
+    background-color: var(--bgcolor);
+    color: var(--textcolor);
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    display: flex;
+    position: fixed;
+    padding:10px;
+    background-color: var(--bgcolor);
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    
+    
+}
+.heading{
+    padding-top: 20px;
+    padding-left: 10px ;
+    color: var(--textcolor);
+    font-size: 35px;
+    flex-basis: 50%;
+}
+
+.buttons1{
+    padding-right: 40px;
+    display: flex;
+    flex-basis: 50%;
+    justify-content: space-between;
+}
+.h1buttons,
+.light,
+.dark,
+.green{
+    height: 35px;
+   margin: 25px; 
+   background-color: transparent;
+   color: var(--header);
+   border: none;
+   padding-left: 10px;
+   padding-right: 10px;
+   font-family: 'Roboto', sans-serif;
+   font-weight: bold;
+   transition: border 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+   
+    
+}
+.h1buttons:hover,
+.light:hover,
+.dark:hover,
+.green:hover{
+    border: 1px solid var(--header);
+    border: 1px solid var(--header);
+    color: var(--textcolor);
+    background-color: var(--header);
+    
+}
+.green{
+    display: none;
+}
+.dark{
+    display: none;
+}
+hr{
+    border: 0px solid black;
+}
+.about{
+    margin-top: 200px;
+    padding-left: 15%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.intro{
+   
+    font-size:60px ;
+}
+.name{
+    font-size:60px ;
+    color: var(--header);
+}
+.abtme{
+    font-size: 25px;
+    height: 100px;
+    width: 600px;
+    line-height: 2;
+}
+.abtimg1{
+    margin-left: 75px;
+    height: 368px;
+    width: 368px;
+    
+}
+.abtimg2{
+    margin-left: 75px;
+    height: 368px;
+    width: 368px;
+    display: none;
+}
+.abtimg3{
+    margin-left: 75px;
+    height: 368px;
+    width: 368px;
+    display: none;
+}
+.skills{
+    display: flex;
+    position: relative;
+    background-color: var(--bgcolor);
+    height: 500px;
+    width: 80%;
+    left: 10%;
+    
+    margin-bottom: 50px;
+    flex-direction: row;
+    
+}
+
+
+.image2{
+   
+    margin-right: 50px;
+    display: block;
+    height: 370px;
+    width: 512px;
+    
+}
+.pskills{
+   
+    
+    font-size: 20px;
+    padding-top: 70px;
+    line-height: 2;
+    
+}
+.sh2{
+    margin-top: 100px;
+    margin-left: 40%;
+    color: var(--header);
+    font-size: 40px;
+}
+.project{
+    
+    width: 1296px;
+    height: 590px;
+}
+.projectname{
+    position: relative;
+    left: 161px;
+   
+    width: 1249px;
+    height: 96px;
+    background: var(--bgcolor);
+    background-blend-mode: normal;
+}
+.ph21{
+    
+    margin-left: 40%;
+    font-size: 40px;
+}
+.ph22{
+    
+    margin-left: 40%;
+    color: var(--header);
+    font-size: 40px;
+}
+.projectcontainer{
+    position: relative;
+    left: 161px;
+    
+    width: 1249px;
+    height: 489px;
+    background: #141414;
+    background-blend-mode: normal;
+}
+.pimages{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-top: 180px;
+   
+    
+}
+.pimage1{
+    position: absolute;
+    top: 50%;
+    
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.pimage2{
+   position: absolute;
+   top: 50%;
+   left: 0;
+    width: 100px;
+    height: 100px;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.slides{
+    position: absolute;
+    transform: translateX(150px);
+    bottom: 0;
+}
+.slide{
+    padding-bottom: 35px;
+    width: 909px;
+    height: 431px;
+    display: none;
+}
+img.displayslide{
+    display:block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+.contactcontainer{
+    height: 200px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socialmedia{
+    border-right: 5px solid var(--textcolor);
+    padding-right: 15px;
+}
+
+.linkedin,
+.whatsapp,
+.twitter,
+.instagram{
+    padding-left: 10px;
+    height: 50px;
+    width:50px;
+}
+.numberemail{
+    margin-left: 30px;
+    
+}
+.hcontact{
+    color:var(--header);
+}
+.copy{
+    display: flex;
+    justify-content: center;
+}
